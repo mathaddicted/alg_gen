@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Algoritmo Genético</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="shortcut icon"
+        href="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimage.flaticon.com%2Ficons%2Fpng%2F512%2F221%2F221685.png&f=1&nofb=1"
+        type="image/x-icon">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="p5.js"></script>
+    <script src="addons/p5.dom.js"></script>
+    <script src="dna.js"></script>
+    <script src="population.js"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="texto">
+            <div class="coisa1">
+                <h1 class="texto_1">Digite a frase alvo</h1>
+                <input class="input_1" type="text" id="frase">
+            </div>
+            <div class="coisa2">
+                <h1 class="texto_1">Taxa de mutação (%)</h1>
+                <input class="input_1" type="text" id="taxa">
+            </div>
+            <div class="coisa3">
+                <h1 class="texto_1">Número de indivíduos</h1>
+                <input class="input_1" type="text" id="individuos">
+            </div>
+            <div class="botao">
+                <input type="button" value="Começar" id="botao">
+            </div>
+        </div>
+        <div class="programa">
+            <div class="info">
+                <h1 id="best">Melhor da geração: </h1>
+                <h1 id="generations">Número total de gerações: </h1>
+                <h1 id="aptidao">Aptidão média: </h1>
+                <h1 id="mutt">Taxa de mutação: </h1>
+            </div>
+            <div class="frases">
+                <h1>Geradas:</h1>
+                <p id="geradas"></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0px;
+}
+
+body {
+    background-color: #232323;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+
+    display: grid;
+
+    grid-template-areas: "texto"
+        "programa";
+    grid-template-rows: 200px 1fr;
+}
+
+.texto {
+    grid-area: texto;
+    display: grid;
+
+    width: 100%;
+    height: 100%;
+
+    grid-template-areas: "coisa1 coisa2 coisa3"
+        ". botao .";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.programa {
+    grid-area: programa;
+
+    display: grid;
+
+    margin: 0px;
+    padding: 0px;
+
+    width: 100%;
+    height: 100%;
+
+    grid-template-areas: "info frases";
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.info {
+    grid-area: info;
+}
+
+.frases {
+    grid-area: frases;
+}
+
+.frases p {
+    color: #c0c0c0;
+}
+
+.info h1,
+.frases h1 {
+    color: #d0d0d0;
+    margin-left: 15px;
+}
+
+.botao {
+    width: 100%;
+    height: 100%;
+
+    grid-area: botao;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+}
+
+.botao input {
+
+    width: 50%;
+    height: 50px;
+
+    border: none;
+
+    background: #10cd00;
+    color: #232323;
+
+    cursor: pointer;
+
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.coisa1 {
+    grid-area: coisa1;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coisa2 {
+    grid-area: coisa2;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coisa3 {
+    grid-area: coisa3;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.texto_1 {
+    color: #10cd00;
+    text-align: center;
+}
+
+.input_1 {
+    font-size: 20px;
+    width: 80%;
+}
