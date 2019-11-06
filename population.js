@@ -79,7 +79,7 @@ class Population {
     getFrases() {
         var texto = '';
         for (var indiv of this.population) {
-            texto += indiv.getFrase() + ', ';
+            texto += indiv.getFrase() + ' ';
         }
         return texto;
     }
