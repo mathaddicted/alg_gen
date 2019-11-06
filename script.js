@@ -38,7 +38,7 @@ function draw() {
         }
         select('#best').html('Melhor da geração: <span style="color:#10cd00">' + popul.getBest() + '</span>');
         select('#generations').html('Número total de gerações: <span style="color:#10cd00">' + popul.generations + '</span>');
-        select('#aptidao').html('Aptidão média (max = <span style="color:#10cd00">' + popul.target.length + '): ' + round(popul.avgFitness()) + '</span>');
+        select('#aptidao').html('Aptidão média (max = ' + popul.target.length + '): <span style="color:#10cd00">' + round(popul.avgFitness()) + '</span>');
         select('#mutt').html('Taxa de mutação: <span style="color:#10cd00">' + popul.mutationRate * 100 + '%' + '</span>');
 
         select('#geradas').html(popul.getFrases());
