@@ -16,7 +16,7 @@ function draw() {
             p = select('#frase').value();
             mut = select('#taxa').value() / 100;
             num = select('#individuos').value();
-            if (p == '' || mut == 0 || num == '') {
+            if (p == '' || num == '') {
                 começou = false;
                 botao.value('Começar');
             } else {
